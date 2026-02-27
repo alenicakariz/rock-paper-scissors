@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="rps.css">
+        <script src="rps.js" defer></script>
+        <title>Rock-Paper-Scissors</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <p class="title">Rock Paper Scissors</p>
+
+            <div class="scores">
+                <p id="yourScoreId">You: 0</p>
+                <p id="computerScoreId">Computer: 0</p>
+                <p id="tieScoreId">Tie: 0</p>
+            </div>
+        
+            <div class="container-rps">
+                <button onclick="rockPicked()" class="rock-button">
+                    <img src="images-folder/rock.png">
+                    <p>Rock</p>
+                </button>
+
+                <button onclick="paperPicked()" class="paper-button">
+                    <img src="images-folder/paper.png">
+                    <p>Paper</p>
+                </button>
+
+                <button onclick="scissorsPicked()" class="scissors-button">
+                    <img src="images-folder/scissors.png">
+                    <p>Scissors</p>
+                </button>
+            </div>
+
+            <div class="announcements">
+                <p>
+                    <img src="images-folder/user-fill.svg" class="icons">: 
+                    <span id="userPickAnnouncement"></span>
+                </p>
+
+                <p>
+                    <img src="images-folder/robot-fill.svg" class="icons">: 
+                    <span id="computerPickAnnouncement"></span>
+                </p>
+            </div>
+
+                <button onclick="resetScore()"
+                class="reset-button">Reset Score</button>
+        </div>
+    </body>
+
+</html>
